@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Autonomous</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="home">
+            <nav id="nav-desktop">            
+                    <div class="logo">
+                        <a href="index.html"> <img src="img/autonomous_logowhtline.svg" alt="logo-auonomous-desktop"> </a>
+                    </div>
+                    <ul id="conteudo-menu">
+                        <a href="about.html"><li>ABOUT</li></a>
+                        <a href="lodges.html"><li>LODGES</li></a>
+                        <a href="blog.html"><li>BLOG</li></a>
+                        <a href="contacts.html"><li>CONTACTS</li></a>
+                    </ul>
+
+                    <ul id="lang">
+                        <a href="">
+                            <li>
+                                <i class="fa fa-search"></i>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>PT</li>
+                        </a>
+                    </ul>
+            </nav>
+
+            <nav id="nav-mobile">
+
+                <i onclick="mostraMenu()" class="fa fa-bars"></i>
+
+                <div class="logo-mobile">
+                    <a href="index.html"> <img src="img/autonomous_logowht.svg" class="logomob" alt="logo-autonomous-mobile"> </a>
+                </div>
+
+                <ul id="item-menu-mobile">
+                    <a href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="lodges.html">
+                        <li>LODGES</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>BLOG</li>
+                    </a>
+                    <a href="contacts.html">
+                        <li>CONTACTS</li>
+                    </a>
+                        <li>
+                            <i class="fa fa-search"></i>
+                        </li>
+                        </a>
+                    <a href="">
+                        <li class="pt_en">PT</li>
+                    </a>
+                        <ul id="social_mob">
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                
+                                <a href="">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                           
+                            </li>
+                        </ul>
+                    
+                </ul>
+
+                
+
+            </nav>
+
+            <div class="texto_home" id="texto_home">
+                <h1>
+                    Impactless
+                </h1>
+                <h2>
+                    BIOCONSTRUCTED LODGES <br> CLOSE TO THE MOUNTAINS
+                </h2>
+                <p>
+                    Minas Gerais - Brasil
+                </p>
+            </div>
+
+            <div class="booking">
+                <div>
+                    <h3>Check-In</h3>
+                    <input type="date">
+                </div>
+                <div>
+                    <h3>Check-Out</h3>
+                    <input type="date">
+                </div>
+                <div>
+                    <h3>Guests</h3>
+                    <input type="number">
+                </div>
+                <button type="button" id="book">
+                    BOOK NOW
+                </button>
+            </div>
+
+            <div class="booking_mobile">
+                <form method="get" action="../LM/lodges.html">
+                    <button type="submit" id="booknow">
+                        BOOK NOW
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="about_home">
+
+            <div class="conteudo_about">
+                <div>
+                    <h2>ABOUT</h2>
+                </div>
+                
+                <section class="foto_about">
+                    
+                    <img src="img/max-bottinger-zbYwNn4xln4-unsplash_web.jpg">
+                </section>
+                
+                <section class="txt_about">
+                    <h3>What is Autonomous</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                        
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+                        </p>
+                </section>
+
+            </div>
+
+        </div>
+
+        <div class="pentagon_about">
+
+            <div class="conteudo_pentagon">
+                <div class="pentagon">
+                    <img id="about_pent" src="img/biocons_pent_web.png">
+                    <div class="about_txt">
+                        <h3>Green Energy</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sapiente corporis ipsam, odio velit voluptatibus.</p>
+                    </div>
+                </div>
+
+
+                <div class="pentagon">
+                    <img id="about_pent" src="img/compost_pent_web.png">
+                    <div class="about_txt">
+                        <h3>Compost</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sapiente corporis ipsam, odio velit voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="pentagon">
+                    <img id="about_pent" src="img/drytoillet_pentagon_web.png">
+                    <div class="about_txt">
+                        <h3>Dry Toillet</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sapiente corporis ipsam, odio velit voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="pentagon">
+                    <img id="about_pent" src="img/commonarea_pent_web.png">
+                    <div class="about_txt">
+                        <h3>Common Area</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sapiente corporis ipsam, odio velit voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="blog_home">
+            
+
+            <h2>BLOG</h2>
+
+            <div class="txt_blog">
+                <div class="txt_destaque_blog">
+                    <h3>Compost at Home</h3>
+                    <p>Por outro lado, o acompanhamento das preferências estimular a paz.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="txt_blog_intro">
+            <div class="info">
+                <h3>Purifying water with banana tree </h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. <a href="blog.html">READ MORE</a> </p>
+             </div>
+
+            <div class="video_blog">
+                <iframe src="https://www.youtube.com/embed/fL3Cn-DrqiI" width="100%" height="448px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>  
+        
+        <div class="latest_blog">
+            <h3>Latest Posts</h3>
+        </div>
+
+        <div class="pentagon_about ultimo_pentagon">
+
+            <div class="conteudo_pentagon">
+                <div class="pentagon">
+                    <img id="blog-pent" src="img/biocons_pent_web.png">
+                    <div class="about_txt">
+                        <h3>Bioconstruction</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui quasi eligendi voluptas at praesentium.</p>
+                    </div>
+                </div>
+
+                <div class="pentagon">
+                    <img id="blog-pent" src="img/compost_pent_web.png">
+                    <div class="about_txt">
+                        <h3>Compost at Home</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui quasi eligendi voluptas at praesentium.</p>
+                    </div>
+                </div>
+
+                <div class="pentagon">
+                    <img id="blog-pent" src="img/drytoillet_pentagon_web.png">
+                    <div class="about_txt">
+                        <h3>Dry Toillet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui quasi eligendi voluptas at praesentium.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+
+
+        <div class="newsletter">
+            
+            <h3>KEEP IN TOUCH</h3>
+
+            <div class="newsletter-input">
+                <input id="name" type="text" value=" your name here">
+                <input id="email" type="text" value=" your email here">
+                <button type="button" id="subscribe">
+                    SUBSCRIBE
+                </button>
+            </div>
+            
+        </div>
+        
+
+        <footer>
+            <p>Copyright 2020 Larissa Marques LSD Webdesign</p>
+            <ul id="social">
+                
+                <li>
+                    <a target="blank" href="https://twitter.com/home">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a target="blank" href="https://facebook.com/home.php">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a target="blank" href="https://instagram.com">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+
+
+    </div>
+    
+    <script>
+        function mostraMenu(){
+            document.getElementById('item-menu-mobile').style.display="block";
+            document.getElementById('texto_home').style.display='none';
+            //document.getElementById("booknow").style.display="block";
+        }
+    </script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
+
