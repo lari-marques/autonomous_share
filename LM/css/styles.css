@@ -4,8 +4,8 @@ font-family: 'Titillium Web', sans-serif;*/
 
 .wrapper{
     width: 100%;
-    float: left;
-    /*margin: 0 10%;*/
+    /*float: left;
+    margin: 0 10%;
     /*background: #25717C;*/
     /*height: 768px;*/
     /*padding: 227px auto 227px auto;*/
@@ -38,8 +38,6 @@ h2{
 h3{
     font-family: 'Amaranth', sans-serif;
     font-size: 26px;
-    float: left;
-    width: 100%;
 }
 
 p{
@@ -109,6 +107,7 @@ nav li{
     position: fixed;
     background: #25717C;
     width: 100%;
+    z-index: 2;
 }
 #nav-mobile{
     display: none;
@@ -234,17 +233,22 @@ nav .fa {
 .about_home{
     width:100%;
    /* height: 500px;*/
-    float: left;
-    padding: 50px 170px;
+   padding: 50px;
+    margin: 0 auto;
+
 }
 
 /*HOME_ABOUT*/ 
-.conteudo_about h2{
+
+.conteudo_about{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.about_home h2{
     color: #303030;
 }
 .conteudo_about, .conteudo_pentagon{
     width: 100%;
-    float: left;
     /*padding: 20px 170px 80px 170px;*/
 }
 
@@ -253,7 +257,7 @@ nav .fa {
     background-size: cover;
     background-position: center;
     margin: 0 10px 10px 10px;
-    width: calc(25% - 20px);
+    width: auto;
 }
 
 .pentagon .about_txt{
@@ -269,37 +273,44 @@ nav .fa {
     color: #303030;
     font-weight: bold;
 }
-.foto_about{
+.conteudo_about img{
     width: 50%;
-    float: left;
+    margin-right: 20px;
+    height: auto;
 }
 
-.foto_about img{
+/*.foto_about img{
     width: 90%;
-    /*width: 610px;
+    width: 610px;
     height: 329.842px;
-    float: left;*/
-}
+    float: left;
+}*/
 
 .txt_about{
-    width: calc(50% - 20px);
+    width: 45%;
+}
+    /*width: calc(50% - 20px); 
     min-width: 300px;
-    /*height: 332px;*/
+    /*height: 332px;
     float: left;
     /* padding: 85px 0 0 0; 
-    padding-left: 20px;*/
+    padding-left: 20px;
     font-size: 100%;
-}
+}*/
 
 .pentagon_about{
-    float: left;
+    /*float: left;*/
     margin: 0px 0px 30px 0px;
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.pentagon_about div{
+/*.pentagon_about div{
     float: left;
-}
+}*/
 
 .ultimo_pentagon .pentagon{
     width: calc(33% - 20px);
@@ -533,9 +544,9 @@ footer p{
 /* MEDIA QUERIES A PªARTIR DE AQUI*/
 
 @media screen and (max-width:1100px){
-    .home{
-        height: 732px;
-    }
+    /* .home{
+        height: auto;
+    } */
     #nav-desktop{
         display: none;
     }
@@ -633,6 +644,14 @@ footer p{
     }
     .txt_about{
         font-size: 60%;
+        width: 100%;
+    }
+    .conteudo_about{
+        flex-flow: column wrap;
+    }
+   
+    .conteudo_about img{
+        width: 100%;
     }
 
 }
