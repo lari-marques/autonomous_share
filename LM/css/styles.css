@@ -4,8 +4,8 @@ font-family: 'Titillium Web', sans-serif;*/
 
 .wrapper{
     width: 100%;
-    /*float: left;
-    margin: 0 10%;
+    float: left;
+    /*margin: 0 10%;*/
     /*background: #25717C;*/
     /*height: 768px;*/
     /*padding: 227px auto 227px auto;*/
@@ -38,6 +38,8 @@ h2{
 h3{
     font-family: 'Amaranth', sans-serif;
     font-size: 26px;
+    float: left;
+    width: 100%;
 }
 
 p{
@@ -97,19 +99,16 @@ nav{
 
 nav li{
     width: 25%;
-    /* float: left; */
+    float: left;
     font-size: 26px;
     text-align: center;
 }
 
 #nav-desktop{
-    display: flex;
+    display: block;
     position: fixed;
     background: #25717C;
     width: 100%;
-    z-index: 2;
-    justify-content: space-between;
-    align-items: center;
 }
 #nav-mobile{
     display: none;
@@ -128,7 +127,7 @@ nav li{
 }
 
 ul #social_mob {
-    /* float: left; */
+    float: left;
     display: contents;
 }
 
@@ -139,7 +138,7 @@ nav .fa {
 
 .logo{
     width: 300px;
-    /* float: left; */
+    float: left;
     margin: 0px 200px 0px 0px;
     color: #F2F2F2;
 }
@@ -151,20 +150,13 @@ nav .fa {
 
 #conteudo-menu{
     width: calc(100% - 700px);
-    /* float: left; */
+    float: left;
     color: #F2F2F2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    li{
-        margin-left: 20px;
-    }
 }
 
 #lang{
     width:120px;
-    display: flex;
-    justify-content: space-around;
+    float: right;
     color: #F2F2F2;
     padding: auto;
 }
@@ -177,14 +169,13 @@ nav .fa {
 .home{
     background: url('../img/yousef-espanioly-opacity-unsplash_web.jpg') no-repeat;
     background-size: cover;
-    position: relative;
-    /* float: left; */
+    float: left;
     width:100%;
     max-width: 1920px;
 }
 
 .texto_home{
-    padding: 190px 170px 120px;
+    padding: 227px 170px 227px 170px;
     color: #F2F2F2;
 }
 
@@ -194,27 +185,21 @@ nav .fa {
 
 .booking{
     width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* height: 175px; */
-    position: absolute;
-    left: 10%;
-    top: 500px;
+    height: 175px;
     background-color: #A8C6CB;
-    margin: 0 auto -135px;
+    margin: -135px auto 0 auto;
     border-radius: 5px;
     padding: 0 0 0 40px;
 }
 
 .booking div{
     width: 25%;
-    /* float: left; */
+    float: left;
     padding: 48px 10px 48px 10px;
 }
 
 .booking input{
-    /* float: left; */
+    float: left;
     border: none;
     border-radius: 5px;
     font-family: 'Titillium Web', sans-serif;
@@ -249,22 +234,17 @@ nav .fa {
 .about_home{
     width:100%;
    /* height: 500px;*/
-   padding: 50px;
-    margin: 0 auto;
+    float: left;
+    padding: 50px 170px;
 }
 
 /*HOME_ABOUT*/ 
-
-.conteudo_about{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-}
-.about_home h2{
+.conteudo_about h2{
     color: #303030;
 }
-.conteudo_pentagon{
+.conteudo_about, .conteudo_pentagon{
     width: 100%;
+    float: left;
     /*padding: 20px 170px 80px 170px;*/
 }
 
@@ -273,14 +253,14 @@ nav .fa {
     background-size: cover;
     background-position: center;
     margin: 0 10px 10px 10px;
-    width: auto;
+    width: calc(25% - 20px);
 }
 
 .pentagon .about_txt{
     position: absolute;
     top: 55px;
-    left: 50px;
-    right: 50px;
+    left: 30px;
+    right: 60px;
     color: #F2F2F2;
     text-align: center;
 }
@@ -289,104 +269,143 @@ nav .fa {
     color: #303030;
     font-weight: bold;
 }
-.conteudo_about img{
+.foto_about{
     width: 50%;
-    margin-right: 20px;
-    height: auto;
+    float: left;
+}
+
+.foto_about img{
+    width: 90%;
+    /*width: 610px;
+    height: 329.842px;
+    float: left;*/
 }
 
 .txt_about{
-    width: 45%;
+    width: calc(50% - 20px);
+    min-width: 300px;
+    /*height: 332px;*/
+    float: left;
+    /* padding: 85px 0 0 0; 
+    padding-left: 20px;*/
+    font-size: 100%;
 }
+
 .pentagon_about{
-    /*float: left;*/
+    float: left;
     margin: 0px 0px 30px 0px;
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
 }
+
+.pentagon_about div{
+    float: left;
+}
+
 .ultimo_pentagon .pentagon{
     width: calc(33% - 20px);
     text-align: center;
 }
+
 .pentagon img{
-    width: 330px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
 }
 
 /*HOME_BLOG*/
 .blog_home{
     background: #D3A1A5;
-    /* float: left; */
+    float: left;
     width: 100%;
     background: url('../img/del-barrett-oo-unsplash_web.jpg');
     width: 100%;
-    /* height: 408px; */
+    height: 408px;
     background-size: cover;
-    padding: 50px 170px; 
-    color: #F2F2F2;
-    h2{
-        margin: 150px auto 30px auto;
-    }
+    padding: 30px 170px 30px 170px;
+    
 }
+
 .blog h2 {
-    color: #F2F2F2;  
+    color: #F2F2F2;
+    
 }
+
 .foto_blog img{
     width: 100%;
     height: 408px;
-    /* float: left; */
+    float: left;
 }
+
+.txt_destaque_blog{
+    width: 700px;
+    /*height: 133px;*/
+    float: left;
+    margin: 150px auto 30px auto;
+    color: #F2F2F2;
+}
+
+.txt_blog{
+    width: 459.992px;
+    height: 332px;
+    float: left;
+}
+/*
+.video_blog {
+    width: 100%;
+    height: 268px;
+    float: left;
+}*/
 
 .txt_blog_intro{
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 50px;
+   /* height: 275px;*/
+    float: left;
+    padding: 50px 170px 30px 170px;
 }
-.txt_blog_intro .info{
-    width: 45%;
-    height: auto;
+
+.txt_blog_intro .info,  .txt_blog_intro .video_blog{
+    width:50%;
+    float: left;
 }
+
 .txt_blog_intro p{
     padding-right: 20px;
 }
+
 .video_blog{
-    width: 45%;
-    height: auto;
+    padding-left: 60px;
 }
+
 .latest_blog{
     padding: 20px 170px 20px 170px;
     float: left;
     width:100%;
 }
+
 .pentagon_latest{
-    /* float: left; */
+    float: left;
     margin: 10px 170px 30px 170px;
     width: 100%;
 }
+
 .pentagon_latest div{
-    /* float: left; */
+    float: left;
 }
+
 .pentagon_latest .pentagon{
     margin: 0 70px 10px 70px;
+
 }
 
 /*HOME_NEWSLETTER*/
 .newsletter{
     width: 100%;
+    float: left;
     background: #A8C6CB;
-    padding: 20px 170px 20px 170px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 20px 170px 20px 170px
 }
 
 .newsletter h3{
-    /* width: 20%; */
+    width: 20%;
     margin: 10px 0px 10px 0;
 }
 
@@ -407,7 +426,6 @@ nav .fa {
     border: none;
     border-radius: 5px;
     font-family: 'Titillium Web', sans-serif;
-    height: 40px;
 }
 
 /*BOTAO SUBSCRIBE*/
@@ -435,32 +453,30 @@ nav .fa {
 /*FOOTER*/
 footer{
     width: 100%;
+    float: left;
     background: #C8898F;
-    padding: 30px 170px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0;
 }
 
 footer p{
     width: calc(70% - 170px);
-    /* float: left; */
+    float: left;
+    margin: 30px 0 0 170px;
 }
 
 #social {
     list-style: none;
     /* position: relative; */
     width: calc(30% - 170px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row nowrap;
+    float: right;
+    padding: 0;
+    padding: 0;
+    margin-left: 170px;
 }
 
 #social li{
     font-size: 41px;
-    /* float: left; */
+    float: left;
     margin: 10px;
 }
 
@@ -485,41 +501,41 @@ footer p{
 .about{
     background: url('../img/red-and-black-indian-hut-under-star-sky-web.jpg') no-repeat;
     background-size: cover;
-    /* float: left; */
+    float: left;
     width:100%;
-    /* height: 600px; */
+    height: 600px;
 }
 
 /*BLOG_MAIN*/
 .blog{
     background: url('../img/michael-glass-C6KCeEWjP34-web.jpg') no-repeat;
     background-size: cover;
-    /* float: left; */
+    float: left;
     width:100%;
-    /* height: 600px; */
+    height: 600px;
 }
 /*LODGES_MAIN*/
 .lodges{
     background: url('../img/green-grass-and-brown-nipa-hut-web.jpg') no-repeat;
     background-size: cover;
-    /* float: left; */
+    float: left;
     width:100%;
-    /* height: 600px; */
+    height: 600px;
 }
 /*CONTACTS_MAIN*/
 .contacts{
     background: url('../img/amritanshu-sikdar-CPLxv2FqVts-unsplash_web.jpg') no-repeat;
     background-size: cover;
-    /* float: left; */
+    float: left;
     width:100%;
 }
 
 /* MEDIA QUERIES A PªARTIR DE AQUI*/
 
 @media screen and (max-width:1100px){
-    /* .home{
-        height: auto;
-    } */
+    .home{
+        height: 732px;
+    }
     #nav-desktop{
         display: none;
     }
@@ -550,7 +566,7 @@ footer p{
     }
 
     .logomob{
-        /* float: left; */
+        float: left;
         width: 100px;
         margin: 0;
     }
@@ -596,9 +612,9 @@ footer p{
         font-size: 40px;
         width: 100%;
         background: #D3A1A5;
-        /* height: 100px; */
+        height: 100px;
         margin: auto;
-        /* float: left; */
+        float: left;
         padding: -100px 320px auto 320px;
         border: none;
     }
@@ -617,45 +633,8 @@ footer p{
     }
     .txt_about{
         font-size: 60%;
-        width: 100%;
-    }
-    .conteudo_about{
-        flex-flow: column wrap;
-    }
-   
-    .conteudo_about img{
-        width: 100%;
     }
 
-    .txt_blog_intro{
-    flex-flow: column wrap;
-    }
-
-    .txt_blog_intro .info{
-        width: 100%;
-    }
-    
-    .video_blog{
-        width: 100%;
-    }
-
-    .newsletter{
-        flex-flow: column wrap;
-        padding: 20px 50px;
-    }
-    #name, #email {
-        width: 100%;
-        margin: 0 0 12px;
-    }
-
-    footer{
-        flex-flow: column wrap;
-        padding: 20px 50px;
-    }
-
-    footer p, #social{
-        width: 100%;
-    }
 }
 
 
